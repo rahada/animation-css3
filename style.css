@@ -1,0 +1,72 @@
+body{
+    margin:  0 auto;
+}
+
+.container{
+    width:100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(white, yellow);
+    animation:sky linear 5s infinite alternate ;
+}
+@keyframes sky{
+    0%{
+        transform: translate(0,0);
+        background: linear-gradient(blue, black) 
+        
+    }
+    100%{
+        transform: translate(0,0);
+    } 
+}
+
+
+.hills{
+    width: 100vw;
+    height: 0;
+    
+}
+
+
+.hill_1{
+        background-color: darkgreen;
+    width: 63%;
+    height: 350px;
+    border-radius: 44%;
+        transform: translate(64%,150%);
+    
+}
+
+.hill_2{
+    background-color:forestgreen;
+    width: 63%;
+    height: 300px;
+    border-radius: 44%;
+    transform: translate(-17%,64%);
+}
+
+.sun{
+    animation:up_down linear 5s infinite alternate;
+    width: 7%;
+    height: 15%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 10px white;
+    background-color: yellow;
+    position: relative;
+    left:60%;
+    z-index: -1;
+}
+
+@keyframes up_down{
+    0%{
+        transform: translate(0,500%);
+        background-color: white; 
+        
+    }
+    100%{
+        transform: translate(0,10%);
+    } 
+}
+
+
+
